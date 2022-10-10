@@ -1,4 +1,4 @@
-import logo from '../../Logo/logo.png';
+import logo from '../../images/logo.png';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css'
@@ -9,7 +9,7 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <div className="logo flex justify-between items-center">
                     <img className='' src={logo} alt="" />
-                    <h1 className='font-bold text-3xl pl-2'>Quiz <span className='text-[#ffffff]'>Panther</span></h1>
+                    <h1 className='font-bold text-3xl pl-2'>Quiz <span className='text-white'>Panther</span></h1>
                 </div>
                 <nav>
                     <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/home'>Home</NavLink>
