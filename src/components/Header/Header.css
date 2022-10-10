@@ -1,0 +1,15 @@
+.logo img {
+    height: 40px;
+}
+
+nav a {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.active {
+    background-color: #2b3351;
+    border-radius: 8px;
+    color: #5fe0e9;
+}
