@@ -1,5 +1,7 @@
 .logo img {
     height: 40px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 6px 0px rgba(95, 224, 233, 0.50);
 }
 
 nav a {
@@ -9,7 +11,7 @@ nav a {
 }
 
 .active {
-    background-color: #2b3351;
+    background-color: rgb(95, 224, 233);
     border-radius: 8px;
-    color: #5fe0e9;
+    color: #2b3351;
 }

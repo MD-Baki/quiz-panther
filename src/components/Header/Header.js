@@ -5,11 +5,11 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div className="header bg-[#5fe0e9]  text-[#2b3351] py-4 border-b-4 border-[#2b3351]">
+        <div className="header bg-[#2b3351]  text-[#5fe0e9] py-3">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="logo flex justify-between items-center">
-                    <img className='' src={logo} alt="" />
-                    <h1 className='font-bold text-3xl pl-2'>Quiz <span className='text-white'>Panther</span></h1>
+                <div className="logo flex justify-between items-center py-1 px-2 rounded-lg">
+                    <img src={logo} alt="" />
+                    <h1 className='font-bold text-3xl pl-3'>Quiz <span className='text-white'>Panther</span></h1>
                 </div>
                 <nav>
                     <NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/home'>Home</NavLink>
