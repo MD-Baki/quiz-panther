@@ -11,7 +11,7 @@ nav a {
 }
 
 .active {
-    background-color: rgb(95, 224, 233);
+    background-color: #5fe0e9;
     border-radius: 8px;
     color: #2b3351;
 }
