@@ -6,7 +6,7 @@ import './Header.css'
 const Header = () => {
     return (
         <div className="header bg-[#2b3351]  text-[#5fe0e9] py-3">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="md:w-11/12 lg:w-9/12 mx-auto flex justify-between items-center">
                 <div className="logo flex justify-between items-center py-1 px-2 rounded-lg">
                     <img src={logo} alt="" />
                     <h1 className='font-bold text-3xl pl-3'>Quiz <span className='text-white'>Panther</span></h1>

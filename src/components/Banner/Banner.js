@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div>
             <div className='banner'>
-                <div className="container mx-auto flex items-center h-full">
+                <div className="md:w-11/12 lg:w-9/12 mx-auto flex items-center h-full">
                     <div className='text-white'>
                         <h1 className='font-bold text-3xl'>Center for <span className='text-[#5fe0e9]'>Digital Education.</span></h1>
                         <p className='w-7/12 py-5'>If you want to expand your knowledge, quiz occupies an important place. So if you want to see the extent of your knowledge then stay with us by answering the simple quiz on our site.</p>

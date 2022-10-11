@@ -11,7 +11,7 @@ const Home = () => {
     return (
         <div className="home-sec">
             <Banner></Banner>
-            <div className="container mx-auto py-20 grid grid-cols-4 gap-4">
+            <div className="md:w-11/12 lg:w-9/12 mx-auto py-20 grid grid-cols-4 gap-4">
                 <h2 className='col-span-4 font-bold text-3xl text-[#2b3351] pb-3'>Quiz Topics</h2>
                 {
                     allQuiz.map(quiz => <AllQuiz
