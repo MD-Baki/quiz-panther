@@ -4,8 +4,8 @@
     box-shadow: -1px -1px 6px 0px rgba(95, 224, 233, 0.50);
 }
 
-nav a {
-    padding: 10px 20px;
+ul li a {
+    padding: 8px 20px;
     font-size: 18px;
     font-weight: 500;
 }
