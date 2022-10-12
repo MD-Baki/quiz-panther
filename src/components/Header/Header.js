@@ -18,9 +18,9 @@ const Header = () => {
                 </div>
                 <ul className={`bg-[#2b3351] flex flex-col md:flex-row absolute md:static duration-100 ease-linear top-[70px] z-10 w-full md:w-auto pt-3 md:pt-0
                 ${open ? 'left-0' : 'left-[-1000px]'}`}>
-                    <li className='mb-4 md:mb-0'><NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/home'>Home</NavLink></li>
-                    <li className='mb-4 md:mb-0'><NavLink to='/statistics' >Statistics</NavLink></li>
-                    <li className='mb-4 md:mb-0'><NavLink to='/blog'>Blog</NavLink></li>
+                    <li className='mb-4 md:mb-0 ml-4 md:ml-0'><NavLink className={({ isActive }) => isActive ? 'active' : undefined} to='/home'>Home</NavLink></li>
+                    <li className='mb-4 md:mb-0 ml-4 md:ml-0'><NavLink to='/statistics' >Statistics</NavLink></li>
+                    <li className='mb-4 md:mb-0 ml-4 md:ml-0'><NavLink to='/blog'>Blog</NavLink></li>
                 </ul>
                 <div onClick={() => setOpen(!open)} className='text-xl md:hidden'>
                     {
