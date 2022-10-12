@@ -7,11 +7,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const QuizTotal = ({ ques }) => {
     const { question, options, correctAnswer } = ques
-    // console.log(options);
+
     const ans = () => {
         toast.success(correctAnswer, {
             position: "top-center"
         });
+    }
+
+    const set = (data) => {
+        if (data === correctAnswer) {
+            toast.success('Correct Answer');
+        } else {
+            toast.error('Wrong Answer');
+        }
     }
 
     return (
@@ -22,9 +30,21 @@ const QuizTotal = ({ ques }) => {
             </div>
             <div className='option grid grid-cols-2 gap-2 mt-2'>
                 {
-                    options.map((data) => (
+                    options.map(data => (
                         <div className='bg-white py-2 px-3 rounded-lg' key={data}>
-                            <input type="radio"></input><span className='pl-2'>{data}</span>
+                            <input
+                                type="radio"
+                                id={data}
+                                name='react-radio'
+                                value={data}
+
+                            />
+                            <label
+                                onClick={() => set(data)}
+                                className='pl-2 cursor-pointer'
+                                htmlFor={data}
+
+                            >{data}</label>
                         </div>
 
                     ))
